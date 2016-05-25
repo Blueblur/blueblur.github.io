@@ -1,24 +1,76 @@
 body {
     background-color: #181818;
     color: #D7D7D7;
-    font-family: monospace;
-    padding: 200;
+    font-family: "Tamsyn", "Terminus", monospace;
+    text-align: center;
 }
 
 #content {
-    padding: 20;
     background-color: #262626;
-    border-radius: 20;
+    position: absolute;
+    padding: 1em;
+    margin: auto;
+    margin-top: 10em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50em;
+    border-radius: 1.2em;
 }
     
 h1 {
-    font-size:18;
+    font-size: medium;
+    margin-top: 0;
+}
+
+p {
+    font-size: medium;
 }
 
 a {
-    color: 87AFAF;
+    color: #87AFAF;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    padding: 0.6em;
+    margin-bottom: 0;
+    text-decoration: none;
+    background-color: #262626;
+    transition: background-color 0.2s;
 }
 
-td {
-    width: 80;
+a:hover {
+    background-color: #585858;
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #E0E0E0;
+    height: 0.2em;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+a:hover:before, a:focus:before, a:active:before {
+				    -webkit-transform: translateY(0);
+				    transform: translateY(0);
+				}
+
+#links {
 }
